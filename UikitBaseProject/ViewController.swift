@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  UikitBaseProject
-//
-//  Created by Zülfü Akgüneş on 24.06.2023.
-//
 
 import UIKit
 
@@ -11,9 +5,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        NetworkManager.shared.getUser { result in
+            switch result {
+            case .success(let success):
+                success.forEach { user in
+                    print(user.name)
+                }
+            case .failure(let failure):
+                print(failure.localizedDescription)
+            }
+        }
+        
+        
     }
-
-
 }
 
