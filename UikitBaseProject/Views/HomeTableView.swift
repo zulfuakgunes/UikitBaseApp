@@ -1,15 +1,22 @@
 import UIKit
 
 class HomeTableView: UITableViewController{
+
+    private var users = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NetworkManager.shared.getUser { result in
+        NetworkManager.shared.getUser { [weak self] result in
             switch result{
-            case .success(let success):
-                success.forEach { User in
-                    print(User)
+            case .success(let users):
+                
+                    self?.users = users
+                
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
                 }
+                
             case .failure(let failure):
                 print(failure.localizedDescription)
             }
@@ -19,16 +26,17 @@ class HomeTableView: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
         var content = cell.defaultContentConfiguration()
-        content.text = "Hello World"
+        content.text = self.users[indexPath.row].name
         cell.contentConfiguration = content
-        
         return cell
     }
 }
+
+
