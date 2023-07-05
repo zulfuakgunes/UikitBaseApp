@@ -7,7 +7,11 @@
 
 import Foundation
 
-class NetworkManager{
+protocol UserService{
+    func getUser(completion: @escaping (Result<[User], Error>) -> Void)
+}
+
+class NetworkManager: UserService{
     
     static let shared = NetworkManager()
     
