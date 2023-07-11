@@ -15,7 +15,7 @@ class HomeTableView: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
         content.text = self.homeTableViewModel.users[indexPath.row].name
@@ -35,7 +35,7 @@ class HomeTableView: UITableViewController{
                     self.tableView.reloadData()
                 }
             case .failure(let failure):
-                print(failure.localizedDescription)
+                print(failure .localizedDescription)
             }
         }
     }
