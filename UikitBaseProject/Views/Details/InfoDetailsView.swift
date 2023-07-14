@@ -10,11 +10,8 @@ class InfoDetailsView: UIViewController{
         tableView.dataSource = self
     }
     
-    func getAllData(){
-    }
     
 }
-
 
 
 extension InfoDetailsView: UITableViewDataSource{
@@ -24,18 +21,23 @@ extension InfoDetailsView: UITableViewDataSource{
         return 1
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Header"
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Footer"
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.cell, for: indexPath) as! TableViewCell
         
         cell.collectionView.tag = indexPath.section
-        
         
         return cell
         
     }
-    
     
 }
 

@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,19 +63,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HQd-vQ-3at">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HQd-vQ-3at">
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="80" id="X2O-qm-eIz" customClass="TableViewCell" customModule="UikitBaseProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="X2O-qm-eIz" customClass="TableViewCell" customModule="UikitBaseProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X2O-qm-eIz" id="nzf-ov-bTH">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ycs-NV-o7e">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3gx-8s-mC4">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -86,26 +85,25 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="O6a-pr-wUd" customClass="CollectionViewCell" customModule="UikitBaseProject" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-24" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="-14" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fwC-ts-Zvs">
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-lP-noI">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="bottom" secondItem="OnM-lP-noI" secondAttribute="bottom" id="3Zn-1m-cKK"/>
-                                                                    <constraint firstItem="OnM-lP-noI" firstAttribute="leading" secondItem="fwC-ts-Zvs" secondAttribute="leading" id="8vJ-iu-Xdf"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="OnM-lP-noI" secondAttribute="trailing" id="f2N-g3-kFS"/>
-                                                                    <constraint firstItem="OnM-lP-noI" firstAttribute="top" secondItem="fwC-ts-Zvs" secondAttribute="top" id="mxP-fg-t8D"/>
-                                                                </constraints>
-                                                            </collectionViewCellContentView>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstItem="OnM-lP-noI" firstAttribute="leading" secondItem="O6a-pr-wUd" secondAttribute="leading" id="AKz-8w-lzk"/>
+                                                                <constraint firstAttribute="trailing" secondItem="OnM-lP-noI" secondAttribute="trailing" id="fNM-Bx-FfH"/>
+                                                                <constraint firstItem="OnM-lP-noI" firstAttribute="centerY" secondItem="O6a-pr-wUd" secondAttribute="centerY" id="hu7-51-Vhk"/>
+                                                            </constraints>
                                                             <connections>
                                                                 <outlet property="detailsLabel" destination="OnM-lP-noI" id="8GW-Wi-jIp"/>
                                                             </connections>

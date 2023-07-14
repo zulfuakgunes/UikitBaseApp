@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A04CBA22A61897700BBF86E /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04CBA12A61897700BBF86E /* Identifier.swift */; };
 		6A214E932A495C1C008E569F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A214E922A495C1C008E569F /* NetworkManager.swift */; };
 		6A214E952A495C3C008E569F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A214E942A495C3C008E569F /* Endpoint.swift */; };
 		6A214E972A496FE4008E569F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A214E962A496FE4008E569F /* User.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A04CBA12A61897700BBF86E /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		6A214E922A495C1C008E569F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6A214E942A495C3C008E569F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		6A214E962A496FE4008E569F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		6A04CBA02A61892C00BBF86E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6A04CBA12A61897700BBF86E /* Identifier.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		6A6C2F822A47782400BA8729 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		6A6C2F8D2A47782400BA8729 /* UikitBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				6A04CBA02A61892C00BBF86E /* Constants */,
 				6AF7363A2A570B6500D145DB /* Helper */,
 				6A6C2FA42A47792B00BA8729 /* ViewModels */,
 				6A6C2FA32A47792000BA8729 /* Views */,
@@ -240,6 +251,7 @@
 				6AF22B4E2A4B3B7400A3ECEB /* HomeTableViewModel.swift in Sources */,
 				6A4E106D2A4A2775008E2FF4 /* SettingsView.swift in Sources */,
 				6A8B27462A5DA71F00CD4F44 /* CollectionViewCell.swift in Sources */,
+				6A04CBA22A61897700BBF86E /* Identifier.swift in Sources */,
 				6A760E182A5444EB00A9218E /* InfoDetailsView.swift in Sources */,
 				6A214E992A49ADCF008E569F /* HomeTableView.swift in Sources */,
 				6A214E952A495C3C008E569F /* Endpoint.swift in Sources */,

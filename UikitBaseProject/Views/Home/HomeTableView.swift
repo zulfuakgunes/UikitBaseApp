@@ -3,14 +3,15 @@ import UIKit
 class HomeTableView: UITableViewController{
     
     var homeTableViewModel = HomeTableViewModel()
-    
+    var users = [User]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getUsers()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        homeTableViewModel.users.count
+        self.users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -18,7 +19,7 @@ class HomeTableView: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
-        content.text = self.homeTableViewModel.users[indexPath.row].name
+        content.text = self.users[indexPath.row].name
         cell.contentConfiguration = content
         return cell
     }
@@ -30,7 +31,7 @@ class HomeTableView: UITableViewController{
             guard let self else{return}
             switch result{
             case .success(let users):
-                homeTableViewModel.users = users
+                self.users = users
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -51,9 +52,5 @@ extension HomeTableView{
     
 }
 
-extension HomeTableView: HomeTableViewModelOutput{
-    func updateView() {
-        tableView.reloadData()
-    }
-}
+
 
