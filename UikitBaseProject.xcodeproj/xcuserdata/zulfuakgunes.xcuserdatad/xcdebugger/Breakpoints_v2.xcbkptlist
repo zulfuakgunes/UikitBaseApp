@@ -3,4 +3,149 @@
    uuid = "EEAB8849-136D-4040-B85F-DE1B11BEF6D9"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF44726D-7368-453A-8410-B2C828D217DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UikitBaseProject/Views/Home/HomeTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF44726D-7368-453A-8410-B2C828D217DE - b1bbaae404d1df7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UikitBaseProject.User&gt;, Swift.Error&gt;) -&gt; () in UikitBaseProject.HomeTableView.getUsers() -&gt; ()"
+                  moduleName = "UikitBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulfuakgunes/Desktop/UikitBaseProject/UikitBaseProject/Views/Home/HomeTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "BF44726D-7368-453A-8410-B2C828D217DE - ce385a905936f1ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;UikitBaseProject.User&gt;, Swift.Error&gt;) -&gt; () in UikitBaseProject.HomeTableView.getUsers() -&gt; ()"
+                  moduleName = "UikitBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulfuakgunes/Desktop/UikitBaseProject/UikitBaseProject/Views/Home/HomeTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "BF44726D-7368-453A-8410-B2C828D217DE - b1bbaae404d1df7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UikitBaseProject.User&gt;, Swift.Error&gt;) -&gt; () in UikitBaseProject.HomeTableView.getUsers() -&gt; ()"
+                  moduleName = "UikitBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulfuakgunes/Desktop/UikitBaseProject/UikitBaseProject/Views/Home/HomeTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA776D0A-F67C-47CC-9FFC-6DE8E49F5B3F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UikitBaseProject/Views/Home/HomeTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA776D0A-F67C-47CC-9FFC-6DE8E49F5B3F - ce385a905936f1ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;UikitBaseProject.User&gt;, Swift.Error&gt;) -&gt; () in UikitBaseProject.HomeTableView.getUsers() -&gt; ()"
+                  moduleName = "UikitBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulfuakgunes/Desktop/UikitBaseProject/UikitBaseProject/Views/Home/HomeTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "DA776D0A-F67C-47CC-9FFC-6DE8E49F5B3F - b1bbaae404d1df5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UikitBaseProject.User&gt;, Swift.Error&gt;) -&gt; () in UikitBaseProject.HomeTableView.getUsers() -&gt; ()"
+                  moduleName = "UikitBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulfuakgunes/Desktop/UikitBaseProject/UikitBaseProject/Views/Home/HomeTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "436">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74D5149B-47E3-4E60-94B9-A2ABBE672993"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UikitBaseProject/Views/Details/TableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E8D7942-79AB-4A3B-97BD-20C0CE5B1003"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UikitBaseProject/Views/Details/TableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "TableViewCell"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

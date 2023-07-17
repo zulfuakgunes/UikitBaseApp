@@ -1,10 +1,3 @@
-//
-//  User.swift
-//  UikitBaseProject
-//
-//  Created by Zülfü Akgüneş on 26.06.2023.
-//
-
 import Foundation
 
 // MARK: - User

@@ -2,8 +2,9 @@ import UIKit
 
 class HomeTableView: UITableViewController{
     
-    var homeTableViewModel = HomeTableViewModel()
-    var users = [User]()
+    private var users = [User]()
+    
+    // selectedRow: IndexPath = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class HomeTableView: UITableViewController{
     
     
     
-    func getUsers(){
+    private func getUsers(){
         NetworkManager.shared.getUser { [weak self] result in
             guard let self else{return}
             switch result{
@@ -46,11 +47,16 @@ class HomeTableView: UITableViewController{
 extension HomeTableView{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "InfoDetailsView")
+        let vc = storyBoard.instantiateViewController(identifier: "InfoDetailsView") as! InfoDetailsView
+        
+        
+        //users[indexPath.row]
+        
         navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
     
 }
-
 
 

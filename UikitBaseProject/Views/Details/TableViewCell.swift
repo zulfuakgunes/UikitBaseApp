@@ -10,24 +10,22 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        collectionView.delegate = self
         collectionView.dataSource = self
         getDetails()
     }
-    
-    
+        
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    
+
     func getDetails(){
         NetworkManager.shared.getUser { [weak self] result in
             guard let self else {return}
             switch result{
             case .success(let users):
-                detailsInfo = users
+                self.detailsInfo = users
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
@@ -40,17 +38,11 @@ class TableViewCell: UITableViewCell {
 }
 
 
-extension TableViewCell: UICollectionViewDelegate{
-    
-}
-
-
 extension TableViewCell: UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return detailsInfo.count
     }
-    
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

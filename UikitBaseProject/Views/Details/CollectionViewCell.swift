@@ -10,7 +10,6 @@ class CollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         detailsLabel.sizeToFit()
         detailsLabel.backgroundColor = .systemCyan
-        
     }
     
     
