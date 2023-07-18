@@ -13,8 +13,8 @@ class TableViewCell: UITableViewCell {
         collectionView.dataSource = self
         getDetails()
     }
-        
-    
+
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -41,7 +41,7 @@ class TableViewCell: UITableViewCell {
 extension TableViewCell: UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return detailsInfo.count
+        return 1
     }
     
     
@@ -52,6 +52,6 @@ extension TableViewCell: UICollectionViewDataSource{
         return cell
     }
     
-    
 }
+
 

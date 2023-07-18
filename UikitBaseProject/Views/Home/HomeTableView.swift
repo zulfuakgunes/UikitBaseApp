@@ -2,10 +2,8 @@ import UIKit
 
 class HomeTableView: UITableViewController{
     
-    private var users = [User]()
+    var users = [User]()
     
-    // selectedRow: IndexPath = []
-
     override func viewDidLoad() {
         super.viewDidLoad()
         getUsers()
@@ -37,7 +35,7 @@ class HomeTableView: UITableViewController{
                     self.tableView.reloadData()
                 }
             case .failure(let failure):
-                print(failure .localizedDescription)
+                print(failure.localizedDescription)
             }
         }
     }
@@ -48,9 +46,6 @@ extension HomeTableView{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "InfoDetailsView") as! InfoDetailsView
-        
-        
-        //users[indexPath.row]
         
         navigationController?.pushViewController(vc, animated: true)
         

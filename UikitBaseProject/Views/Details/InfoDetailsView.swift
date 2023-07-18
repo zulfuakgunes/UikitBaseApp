@@ -3,9 +3,9 @@ import UIKit
 class InfoDetailsView: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
-        
+
     private var data = [User]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
@@ -37,7 +37,7 @@ extension InfoDetailsView: UITableViewDataSource{
     
     //MARK: Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -48,8 +48,6 @@ extension InfoDetailsView: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.cell, for: indexPath) as! TableViewCell
-        
-        
         return cell
 
     }
